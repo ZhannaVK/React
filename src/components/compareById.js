@@ -1,0 +1,1 @@
+export const compareById = (targetID) => (item) => item.id === targetID;
