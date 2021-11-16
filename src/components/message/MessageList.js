@@ -1,0 +1,23 @@
+import React from "react";
+import { FullMessage } from './Message';
+
+
+//вывод сообщений в чате
+export const MessageList = (props) => {
+
+
+    console.log(props);
+
+
+
+    return (
+        <div className="chat">
+            {
+                props.messageList.map((item) => (
+                    < FullMessage key={item.id} {...item} />
+
+                ))}
+        </div>
+    );
+};
+
